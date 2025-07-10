@@ -1,0 +1,195 @@
+/* AdminDashboard.css */
+
+.admin-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb;
+  border-radius: 8px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.admin-container h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.post-card {
+  background: #fff;
+  padding: 1.2rem 1.5rem;
+  margin-bottom: 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.post-card:hover {
+  box-shadow: 0 4px 15px rgb(0 0 0 / 0.15);
+}
+
+.post-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #34495e;
+  margin-bottom: 0.6rem;
+}
+
+.post-content {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+  margin-bottom: 1rem;
+  white-space: pre-wrap;
+}
+
+.edit-input,
+.edit-textarea {
+  width: 100%;
+  padding: 0.5rem 0.8rem;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  border: 1.8px solid #d1d5db;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+}
+
+.edit-input:focus,
+.edit-textarea:focus {
+  outline: none;
+  border-color: #3b82f6; /* blue */
+  box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+}
+
+.edit-textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.button-group {
+  display: flex;
+  gap: 12px;
+}
+
+button {
+  background-color: #3b82f6;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  user-select: none;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #2563eb; /* darker blue */
+}
+
+button:disabled {
+  background-color: #94a3b8;
+  cursor: not-allowed;
+}
+
+/* Optional: Cancel button style */
+button.cancel-btn {
+  background-color: #ef4444; /* red */
+}
+
+button.cancel-btn:hover {
+  background-color: #dc2626;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .admin-container {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  button {
+    flex-grow: 1;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+}
+.create-post-form {
+  background: #fff;
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.create-post-form h3 {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  color: #2c3e50;
+}
+
+.create-post-form label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+  color: #34495e;
+}
+
+.create-post-form input[type="text"],
+.create-post-form textarea {
+  width: 100%;
+  padding: 0.5rem 0.8rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border: 1.8px solid #d1d5db;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+}
+
+.create-post-form input[type="text"]:focus,
+.create-post-form textarea:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+}
+
+.create-post-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.create-post-form input[type="file"] {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.create-post-form button {
+  background-color: #10b981; /* green */
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  user-select: none;
+  font-size: 1.1rem;
+}
+
+.create-post-form button:hover {
+  background-color: #059669;
+}
+
+.create-post-form button:disabled {
+  background-color: #a7f3d0;
+  cursor: not-allowed;
+}
