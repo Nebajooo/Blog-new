@@ -1,6 +1,8 @@
 import axios from "axios";
 
-const instance = axios.create({ baseURL: "http://localhost:5000/api" });
+const instance = axios.create({
+  baseURL: `https://blog-new-75c5.onrender.com`,
+});
 
 instance.interceptors.request.use((config) => {
   const token = localStorage.getItem("token");
